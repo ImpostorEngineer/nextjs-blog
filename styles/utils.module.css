@@ -1,3 +1,9 @@
+.heading2Xl,
+.headingXl,
+.headingLg {
+  font-family: 'Merriweather', serif;
+}
+
 .heading2Xl {
   font-size: 2.5rem;
   line-height: 1.2;

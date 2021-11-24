@@ -19,10 +19,10 @@ export default function Home({ allPostsData }) {
           <a href='https://twitter.com/idemirer'>Twitter</a>.
         </p>
       </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+      <section className={`${utilStyles.padding1px}`}>
+        <h2 className={utilStyles.headingMd}>Blog</h2>
         <ul className={utilStyles.list}>
-          {allPostsData.slice(0, 2).map(({ id, date, title }) => (
+          {allPostsData.slice(0, 2).map(({ id, date, title, tags }) => (
             <li className={utilStyles.listItem} key={id}>
               <Link href={`/posts/${id}`}>
                 <a>{title}</a>

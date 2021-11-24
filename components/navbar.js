@@ -1,7 +1,9 @@
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
+import Layout from './layout';
 
-export default function Navbar() {
+export default function Navbar({ home }) {
   return (
     <div className={utilStyles.navbar}>
       <div>

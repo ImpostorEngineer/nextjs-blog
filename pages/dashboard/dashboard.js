@@ -109,7 +109,7 @@ const tsaChartData = [
 
 const occChartOptions = {
   chart: {
-    fontFamily: 'Roboto, Arial, sans-serif',
+    fontFamily: 'Inter, Roboto, Arial, sans-serif',
     height: 350,
     width: 650,
     type: 'line',
@@ -132,7 +132,7 @@ const occChartOptions = {
       style: {
         color: '#9C9C9C',
         fontSize: '10px',
-        fontFamily: 'Roboto, sans-serif',
+        fontFamily: 'Inter, Roboto, sans-serif',
         fontWeight: 400,
       },
     },
@@ -164,7 +164,7 @@ const occChartOptions = {
 
 const ADRChartOptions = {
   chart: {
-    fontFamily: 'Roboto, Arial, sans-serif',
+    fontFamily: 'Inter, Roboto, Arial, sans-serif',
     height: 350,
     width: 650,
     type: 'line',
@@ -187,7 +187,7 @@ const ADRChartOptions = {
       style: {
         color: '#9C9C9C',
         fontSize: '10px',
-        fontFamily: 'Roboto, sans-serif',
+        fontFamily: 'Inter, Roboto, sans-serif',
         fontWeight: 400,
       },
     },
@@ -219,7 +219,7 @@ const ADRChartOptions = {
 
 const revPARChartOptions = {
   chart: {
-    fontFamily: 'Roboto, Arial, sans-serif',
+    fontFamily: 'Inter, Roboto, Arial, sans-serif',
     height: 350,
     width: 650,
     type: 'line',
@@ -242,7 +242,7 @@ const revPARChartOptions = {
       style: {
         color: '#9C9C9C',
         fontSize: '10px',
-        fontFamily: 'Roboto, sans-serif',
+        fontFamily: 'Inter, Roboto, sans-serif',
         fontWeight: 400,
       },
     },
@@ -284,7 +284,7 @@ const tsaChartOptions = {
     },
   },
   chart: {
-    fontFamily: 'Roboto, Arial, sans-serif',
+    fontFamily: 'Inter, Roboto, Arial, sans-serif',
     height: 350,
     width: 650,
     type: 'line',
@@ -325,7 +325,7 @@ const tsaChartOptions = {
       style: {
         color: '#9C9C9C',
         fontSize: '10px',
-        fontFamily: 'Roboto, sans-serif',
+        fontFamily: 'Inter, Roboto, sans-serif',
         fontWeight: 400,
       },
     },
@@ -379,22 +379,25 @@ export default function Dashboard() {
       <Head>
         <title>Hospitality Data Dashboard</title>
       </Head>
-      <div>
-        <h3>Occupancy Data:</h3>
-        <CreateChart data={occChartData} options={occChartOptions} type={'line'} width={650} />
-      </div>
-      <div>
-        <h3>ADR Data:</h3>
-        <CreateChart data={ADRChartData} options={ADRChartOptions} type={'line'} width={650} />
-      </div>
-      <div>
-        <h3>RevPAR Data:</h3>
-        <CreateChart data={revPARChartData} options={revPARChartOptions} type={'line'} width={650} />
-      </div>
-      <div>
-        <h3>TSA Passenger Data:</h3>
-        <CreateChart data={tsaChartData} options={tsaChartOptions} type={'line'} width={650} />
-      </div>
+      <h2 className={utilStyles.headingLg}>Hospitality Data Dashboard</h2>
+      <section>
+        <div>
+          <h3>Occupancy Data:</h3>
+          <CreateChart data={occChartData} options={occChartOptions} type={'line'} width={650} />
+        </div>
+        <div>
+          <h3>ADR Data:</h3>
+          <CreateChart data={ADRChartData} options={ADRChartOptions} type={'line'} width={650} />
+        </div>
+        <div>
+          <h3>RevPAR Data:</h3>
+          <CreateChart data={revPARChartData} options={revPARChartOptions} type={'line'} width={650} />
+        </div>
+        <div>
+          <h3>TSA Passenger Data:</h3>
+          <CreateChart data={tsaChartData} options={tsaChartOptions} type={'line'} width={650} />
+        </div>
+      </section>
     </Layout>
   );
 }

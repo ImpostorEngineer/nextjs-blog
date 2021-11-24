@@ -7,6 +7,7 @@ export default function Contact() {
       <Head>
         <title>Contact</title>
       </Head>
+      <h2 className={utilStyles.headingLg}>Contact</h2>
       <div>Contact Information</div>
     </Layout>
   );
