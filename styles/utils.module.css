@@ -55,3 +55,20 @@
 .textRight {
   text-align: right;
 }
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  align-items: center;
+  flex-direction: row;
+  font-weight: 700;
+  margin: 10px 0px;
+}
+.navbar a {
+  color: #000;
+}
+.navbar a:hover {
+  color: #900;
+  text-decoration: none;
+  text-shadow: 1px 1px #ccc;
+}

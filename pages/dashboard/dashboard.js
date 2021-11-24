@@ -4,7 +4,6 @@ import utilStyles from '../../styles/utils.module.css';
 import Link from 'next/link';
 import Date from '../../components/date';
 import CreateChart from '../../components/apexchartlayout';
-
 import strdata from '../../public/data/str.json';
 import tsaData from '../../public/data/passengerData.json';
 

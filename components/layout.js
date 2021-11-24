@@ -3,6 +3,7 @@ import Image from 'next/image';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
+import Navbar from './navbar';
 
 const name = 'Ilhan Demirer';
 export const siteTitle = 'Ilhan Demirer Personal Website';
@@ -22,6 +23,7 @@ export default function Layout({ children, home }) {
         <meta name='og:title' content={siteTitle} />
         <meta name='twitter:card' content='summary_large_image' />
       </Head>
+      <Navbar />
       <header className={styles.header}>
         {home ? (
           <>
