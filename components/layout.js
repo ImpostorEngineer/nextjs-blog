@@ -29,8 +29,8 @@ export default function Layout({ children, home }) {
               priority
               src='/images/IlhanDemirerProfilePicture.jpg'
               className={utilStyles.borderCircle}
-              height={150}
-              width={150}
+              height={120}
+              width={120}
               alt={name}
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
@@ -43,8 +43,8 @@ export default function Layout({ children, home }) {
                   priority
                   src='/images/IlhanDemirerProfilePicture.jpg'
                   className={utilStyles.borderCircle}
-                  height={108}
-                  width={108}
+                  height={75}
+                  width={75}
                   alt={name}
                 />
               </a>

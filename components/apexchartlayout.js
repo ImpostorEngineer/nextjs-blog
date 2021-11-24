@@ -7,12 +7,8 @@ export default function CreateChart({ data, options, type, width }) {
   const [chartSeries] = useState(data);
 
   return (
-    <div className='app'>
-      <div className='row'>
-        <div className='mixed-chart'>
-          <Chart options={chartOptions} series={chartSeries} type={type} width={width} />
-        </div>
-      </div>
+    <div className='chart'>
+      <Chart options={chartOptions} series={chartSeries} type={type} width={width} />
     </div>
   );
 }
