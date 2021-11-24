@@ -8,7 +8,7 @@ import CreateChart from '../../components/apexchartlayout';
 import strdata from '../../public/data/str.json';
 import tsaData from '../../public/data/passengerData.json';
 
-const updateDate = '2021-11-23';
+const updateDate = 'Nov 23, 2021';
 
 let occData2019 = [];
 let occData2020 = [];
@@ -128,8 +128,8 @@ const occChartOptions = {
       rotate: 0,
     },
     title: {
-      text: 'Updated Weekly. Source: STR, str.com',
-      offsetX: 215,
+      text: 'Source: STR, str.com. Last update: ' + updateDate,
+      offsetX: 190,
       style: {
         color: '#9C9C9C',
         fontSize: '10px',
@@ -183,8 +183,8 @@ const ADRChartOptions = {
       rotate: 0,
     },
     title: {
-      text: 'Updated Weekly. Source: STR, str.com',
-      offsetX: 215,
+      text: 'Source: STR, str.com. Last update: ' + updateDate,
+      offsetX: 190,
       style: {
         color: '#9C9C9C',
         fontSize: '10px',
@@ -238,8 +238,8 @@ const revPARChartOptions = {
       rotate: 0,
     },
     title: {
-      text: 'Updated Weekly. Source: STR, str.com',
-      offsetX: 215,
+      text: 'Source: STR, str.com. Last update: ' + updateDate,
+      offsetX: 190,
       style: {
         color: '#9C9C9C',
         fontSize: '10px',
@@ -321,8 +321,8 @@ const tsaChartOptions = {
       rotate: -45,
     },
     title: {
-      text: 'Updated Weekly. Source: TSA, tsa.gov',
-      offsetX: 225,
+      text: 'Source: TSA, tsa.gov. Last update: ' + updateDate,
+      offsetX: 190,
       style: {
         color: '#9C9C9C',
         fontSize: '10px',
@@ -383,30 +383,18 @@ export default function Dashboard() {
       <div>
         <h3>Occupancy Data:</h3>
         <CreateChart data={occChartData} options={occChartOptions} type={'line'} width={650} />
-        <p className={`${utilStyles.lightText} ${utilStyles.textRight}`}>
-          Last updated: <Date dateString={updateDate} />
-        </p>
       </div>
       <div>
         <h3>ADR Data:</h3>
         <CreateChart data={ADRChartData} options={ADRChartOptions} type={'line'} width={650} />
-        <p className={`${utilStyles.lightText} ${utilStyles.textRight}`}>
-          Last updated: <Date dateString={updateDate} />
-        </p>
       </div>
       <div>
         <h3>RevPAR Data:</h3>
         <CreateChart data={revPARChartData} options={revPARChartOptions} type={'line'} width={650} />
-        <p className={`${utilStyles.lightText} ${utilStyles.textRight}`}>
-          Last updated: <Date dateString={updateDate} />
-        </p>
       </div>
       <div>
         <h3>TSA Passenger Data:</h3>
         <CreateChart data={tsaChartData} options={tsaChartOptions} type={'line'} width={650} />
-        <p className={`${utilStyles.lightText} ${utilStyles.textRight}`}>
-          Last updated: <Date dateString={updateDate} />
-        </p>
       </div>
     </Layout>
   );
